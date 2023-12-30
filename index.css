@@ -1,0 +1,146 @@
+*{
+    font-family: 'Poppins', 'Quattrocento Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --with-color: #fff;
+    --red-color: #e61313ee;
+    --width-container: 30%;
+    --border-radius: 5px;
+    --blue-color: #1838c9;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,255,220,1) 100%); 
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+h1{
+    color: gray;
+}
+
+.container-blanc{
+    background-color: var(--with-color);
+    width: var(--width-container);
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    /* flex-col */
+    flex-direction: column;
+
+    /* items-center */
+    align-items: center;
+
+    /* rounded */
+    border-radius: var(--border-radius);
+}
+
+
+.container-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-btn button{
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    border: solid 1px transparent;
+    cursor: pointer;
+}
+
+.container-btn button span, .facebook, .google{
+    font-size: 20px;
+}
+
+.container-blanc button:nth-child(1){
+    background-color: var(--blue-color);
+    color: var(--with-color);
+}
+.container-blanc button:nth-child(2){
+    background-color: var(--red-color);
+    color: var(--with-color);
+}
+
+.container-blanc button:nth-child(1):hover{
+    background-color: var(--with-color);
+    color: black;
+    border: solid 1px var(--blue-color);
+}
+.container-blanc button:nth-child(2):hover{
+    background-color: var(--with-color);
+    color: black;
+    border: solid 1px var(--red-color);
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-input .container-input-username{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-input .container-input-username input{
+    padding: 10px 8px;
+    background-color: #f0f0f0;
+    border: none;
+}
+
+.container-input .container-input-username .container-forgot-password{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & a{
+        color: var(--blue-color);
+    }
+}
+
+
+.container-btn-signup{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & span{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & a{
+            color: var(--blue-color);
+        }
+    }
+}
+
+.container-btn-signup .sign-in{
+    padding: 10px 8px;
+    font-size: 20px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
